@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "lemonthings:block/platinum_chain",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "lemonthings:block/platinum_chain",
+      "y": 90,
+      "z": 90
+    },
+    "axis=z": {
+      "model": "lemonthings:block/platinum_chain",
+      "x": 90,
+      "z": 90
+    }
+  }
+}

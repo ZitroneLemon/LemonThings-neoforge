@@ -1,0 +1,72 @@
+{
+  "item.lemonthings.amethyst_sword": "Amethyst Sword",
+  "message.lemonthings.amethyst_sword_full": "The sword has absorbed all the power of the amethyst!",
+  "item.lemonthings.amethyst_sword.tooltip": "Absorbs the power of amethyst geodes.\nRight-click on a Budding Amethyst to enchant.",
+  "itemGroup.lemonthings": "LemonThings",
+  "item.lemonthings.simplest_bow": "Simplest Bow",
+  "item.lemonthings.bone_bow": "Bone Bow",
+  "item.lemonthings.bone_bow.tooltip": "Only shoots Bone Arrows.\nHits apply Wither effect.",
+  "item.lemonthings.bone_arrow": "Bone Arrow",
+  "item.lemonthings.bone_arrow.tooltip": "Applies Wither II on hit.",
+  "item.lemonthings.withered_bone": "Withered Bone",
+  "item.lemonthings.withered_bone_meal": "Withered Bone Meal",
+
+  "item.minecraft.potion.effect.wither": "Potion of Withering",
+  "item.minecraft.splash_potion.effect.wither": "Splash Potion of Withering",
+  "item.minecraft.lingering_potion.effect.wither": "Lingering Potion of Withering",
+  "item.minecraft.tipped_arrow.effect.wither": "Arrow of Withering",
+  "item.minecraft.potion.effect.long_wither": "Potion of Withering",
+  "item.minecraft.splash_potion.effect.long_wither": "Splash Potion of Withering",
+  "item.minecraft.lingering_potion.effect.long_wither": "Lingering Potion of Withering",
+  "item.minecraft.tipped_arrow.effect.long_wither": "Arrow of Withering",
+  "item.minecraft.potion.effect.strong_wither": "Potion of Withering II",
+  "item.minecraft.splash_potion.effect.strong_wither": "Splash Potion of Withering II",
+  "item.minecraft.lingering_potion.effect.strong_wither": "Lingering Potion of Withering II",
+  "item.minecraft.tipped_arrow.effect.strong_wither": "Arrow of Withering II",
+
+  "item.lemonthings.feather_paper": "Feather Paper",
+  "item.lemonthings.feather_paper.tooltip": "Crafted from paper at a fletching table",
+  "recipe.lemonthings.arrow_from_feather_paper": "Arrow from Feather Paper",
+
+  "item.lemonthings.wandering_trader_bag": "Wandering Trader's Bag",
+  "item.lemonthings.wandering_trader_bag.tooltip": "Contains various valuable items",
+  "item.lemonthings.witch_bag": "Witch's Bag",
+  "item.lemonthings.witch_bag.tooltip": "Contains magical ingredients",
+  "item.lemonthings.piglin_bag": "Piglin's Bag",
+  "item.lemonthings.piglin_bag.tooltip": "Contains gold and nether items",
+  "item.lemonthings.pillager_bag": "Bandit's Bag",
+  "item.lemonthings.pillager_bag.tooltip": "Contains weapons and valuables",
+  "item.lemonthings.loot_bag.tooltip": "Right-click to open",
+  "message.lemonthings.bag_opened": "You opened the bag!",
+
+  "item.lemonthings.ravager_bag": "Ravager's Bag",
+  "item.lemonthings.ravager_bag.tooltip": "A rugged bag made from ravager leather.\nCan store up to 3 stacks of items",
+
+  "item.lemonthings.platinum_ingot": "Platinum Ingot",
+  "item.lemonthings.platinum_nugget": "Platinum Nugget",
+  "block.lemonthings.platinum_chain": "Platinum Chain",
+  "item.lemonthings.ravager_leather": "Ravager Leather",
+  "block.lemonthings.platinum_block": "Platinum Block",
+
+  "item.lemonthings.tome_of_transmission": "Tome of Transmission",
+  "item.lemonthings.tome_of_transmission.tooltip": "Place with an enchanted item in a grindstone to absorb its enchantments",
+
+  "item.lemonthings.flower_crown": "Flower Crown",
+  "item.lemonthings.flower_crown.tooltip": "Bees love this.!",
+
+  "item.lemonthings.sculk_spyglass": "Sculk Spyglass",
+  "item.lemonthings.sculk_spyglass.tooltip": "Highlights all entities within 128 blocks when used",
+
+  "item.lemonthings.needle": "Needle",
+  "item.lemonthings.handmade_totem": "Handmade Totem",
+  "item.lemonthings.handmade_totem.tooltip": "Prevents death once, but does not grant any effects",
+  "item.lemonthings.repair_kit": "Repair Kit",
+  "item.lemonthings.repair_kit.tooltip": "Repairs item in offhand by 0-4 durability, uses 1 durability",
+  "message.lemonthings.repair_kit.success": "Item repaired by +%d durability!",
+  "message.lemonthings.repair_kit.failed": "Repair failed!",
+
+  "item.lemonthings.wooden_bucket": "Wooden Bucket",
+  "item.lemonthings.wooden_water_bucket": "Wooden Water Bucket",
+
+  "item.lemonthings.copper_hammer": "Copper Hammer"
+}

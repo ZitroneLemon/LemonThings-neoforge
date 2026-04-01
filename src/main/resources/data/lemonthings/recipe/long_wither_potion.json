@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:brewing",
+  "ingredient": {
+    "item": "minecraft:redstone"
+  },
+  "base": {
+    "potion": "lemonthings:wither"
+  },
+  "result": {
+    "potion": "lemonthings:long_wither"
+  }
+}

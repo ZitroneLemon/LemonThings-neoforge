@@ -1,0 +1,45 @@
+{
+  "credit": "Made with Blockbench",
+  "texture_size": [16, 16],
+  "render_type": "cutout",
+  "textures": {
+    "0": "lemonthings:block/platinum_chain",
+    "particle": "lemonthings:block/platinum_chain"
+  },
+  "elements": [
+    {
+      "from": [8, 0, 6],
+      "to": [8, 16, 10],
+      "rotation": {
+        "angle": -45,
+        "axis": "y",
+        "origin": [8, 0, 8]
+      },
+      "faces": {
+        "north": {"uv": [1, 0, 1, 16], "texture": "#0"},
+        "east": {"uv": [4, 0, 8, 16], "texture": "#0"},
+        "south": {"uv": [1, 0, 1, 16], "texture": "#0"},
+        "west": {"uv": [4, 0, 8, 16], "texture": "#0"},
+        "up": {"uv": [1, 0, 1, 4], "texture": "#0"},
+        "down": {"uv": [1, 0, 1, 4], "texture": "#0"}
+      }
+    },
+    {
+      "from": [6, 0, 8],
+      "to": [10, 16, 8],
+      "rotation": {
+        "angle": -45,
+        "axis": "y",
+        "origin": [8, 0, 8]
+      },
+      "faces": {
+        "north": {"uv": [0, 0, 4, 16], "texture": "#0"},
+        "east": {"uv": [1, 0, 1, 16], "texture": "#0"},
+        "south": {"uv": [0, 0, 4, 16], "texture": "#0"},
+        "west": {"uv": [1, 0, 1, 16], "texture": "#0"},
+        "up": {"uv": [6, 8, 10, 8], "texture": "#0"},
+        "down": {"uv": [6, 1, 10, 1], "texture": "#0"}
+      }
+    }
+  ]
+}

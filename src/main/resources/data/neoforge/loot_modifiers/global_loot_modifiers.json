@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "entries": [
+    "lemonthings:add_witch_bag",
+    "lemonthings:add_piglin_bag",
+    "lemonthings:add_pillager_bag",
+    "lemonthings:add_wandering_trader_bag",
+    "lemonthings:add_ravager_leather",
+    "lemonthings:add_withered_bone",
+    "lemonthings:add_ravager_platinum",
+    "lemonthings:add_pillager_platinum"
+  ]
+}

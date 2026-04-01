@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "F F",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "tag": "minecraft:flowers"
+    }
+  },
+  "result": {
+    "id": "lemonthings:flower_crown",
+    "count": 1
+  }
+}

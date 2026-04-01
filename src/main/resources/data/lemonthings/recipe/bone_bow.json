@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " BS",
+    "W S",
+    " BS"
+  ],
+  "key": {
+    "W": {"item": "lemonthings:withered_bone"},
+    "B": {"item": "minecraft:bone"},
+    "S": {"item": "minecraft:string"}
+  },
+  "result": {
+    "id": "lemonthings:bone_bow",
+    "count": 1
+  }
+}

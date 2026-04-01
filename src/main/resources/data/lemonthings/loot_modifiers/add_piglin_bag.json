@@ -1,0 +1,16 @@
+{
+  "type": "lemonthings:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:piglin_brute"
+      }
+    }
+  ],
+  "item": "lemonthings:piglin_bag",
+  "min_count": 1,
+  "max_count": 1,
+  "chance": 0.4
+}

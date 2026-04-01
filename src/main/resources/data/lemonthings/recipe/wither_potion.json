@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:brewing",
+  "ingredient": {
+    "item": "minecraft:wither_rose"
+  },
+  "base": {
+    "potion": "minecraft:awkward"
+  },
+  "result": {
+    "potion": "lemonthings:wither"
+  }
+}

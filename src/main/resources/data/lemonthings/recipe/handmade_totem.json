@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RB",
+    "EN"
+  ],
+  "key": {
+    "N": {
+      "item": "lemonthings:needle"
+    },
+    "R": {
+      "item": "minecraft:rabbit_hide"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "B": {
+      "item": "minecraft:experience_bottle"
+    }
+  },
+  "result": {
+    "id": "lemonthings:handmade_totem",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E",
+    "D",
+    "S"
+  ],
+  "key": {
+    "D": {"item": "minecraft:diamond"},
+    "E": {"item": "minecraft:echo_shard"},
+    "S": {"item": "minecraft:spyglass"}
+  },
+  "result": {
+    "id": "lemonthings:sculk_spyglass",
+    "count": 1
+  }
+}

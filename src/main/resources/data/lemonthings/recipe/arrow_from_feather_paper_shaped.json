@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I",
+    "S",
+    "F"
+  ],
+  "key": {
+    "F": {
+      "item": "lemonthings:feather_paper"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:flint"
+    }
+  },
+  "result": {
+    "id": "minecraft:arrow",
+    "count": 4
+  }
+}

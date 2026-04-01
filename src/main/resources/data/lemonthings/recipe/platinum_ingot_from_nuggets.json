@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "lemonthings:platinum_nugget"
+    }
+  },
+  "result": {
+    "id": "lemonthings:platinum_ingot",
+    "count": 1
+  }
+}

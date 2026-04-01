@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lemonthings:withered_bone"
+    }
+  ],
+  "result": {
+    "id": "lemonthings:withered_bone_meal",
+    "count": 4
+  }
+}

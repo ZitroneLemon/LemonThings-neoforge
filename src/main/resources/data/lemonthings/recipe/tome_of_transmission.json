@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "XBY",
+    " P "
+  ],
+  "key": {
+    "E": {"item": "minecraft:ender_eye"},
+    "X": {"item": "minecraft:experience_bottle"},
+    "B": {"item": "minecraft:book"},
+    "Y": {"item": "minecraft:amethyst_shard"},
+    "P": {"item": "minecraft:prismarine_crystals"}
+  },
+  "result": {
+    "id": "lemonthings:tome_of_transmission",
+    "count": 1
+  }
+}

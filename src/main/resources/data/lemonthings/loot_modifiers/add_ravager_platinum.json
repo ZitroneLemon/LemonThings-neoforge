@@ -1,0 +1,16 @@
+{
+  "type": "lemonthings:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:entity_properties",
+      "predicate": {
+        "type": "minecraft:ravager"
+      },
+      "entity": "this"
+    }
+  ],
+  "item": "lemonthings:platinum_ingot",
+  "min_count": 1,
+  "max_count": 2,
+  "chance": 0.4
+}

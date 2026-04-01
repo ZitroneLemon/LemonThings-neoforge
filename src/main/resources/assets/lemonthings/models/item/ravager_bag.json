@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "lemonthings:item/ravager_bag"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "filled": 1
+      },
+      "model": "lemonthings:item/ravager_bag_filled"
+    }
+  ]
+}

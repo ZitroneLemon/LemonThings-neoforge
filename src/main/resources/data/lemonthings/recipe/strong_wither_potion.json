@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:brewing",
+  "ingredient": {
+    "item": "minecraft:glowstone_dust"
+  },
+  "base": {
+    "potion": "lemonthings:wither"
+  },
+  "result": {
+    "potion": "lemonthings:strong_wither"
+  }
+}

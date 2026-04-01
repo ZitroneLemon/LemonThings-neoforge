@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "lemonthings:platinum_ingot"
+    }
+  ],
+  "result": {
+    "id": "lemonthings:platinum_nugget",
+    "count": 9
+  }
+}

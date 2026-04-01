@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NS",
+    "IQ"
+  ],
+  "key": {
+    "N": {
+      "item": "lemonthings:needle"
+    },
+    "I": {
+      "item": "minecraft:copper_ingot"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result": {
+    "id": "lemonthings:repair_kit",
+    "count": 1
+  }
+}

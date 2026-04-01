@@ -1,0 +1,72 @@
+{
+  "item.lemonthings.amethyst_sword": "Аметистовый меч",
+  "message.lemonthings.amethyst_sword_full": "Меч уже вобрал всю силу аметиста!",
+  "item.lemonthings.amethyst_sword.tooltip": "Впитывает силу аметистовых жил.\nНажми ПКМ по цветущему аметисту, чтобы зачаровать.",
+  "itemGroup.lemonthings": "LemonThings",
+  "item.lemonthings.simplest_bow": "Простейший лук",
+  "item.lemonthings.bone_bow": "Костяной лук",
+  "item.lemonthings.bone_bow.tooltip": "Стреляет только костяными стрелами.\nПри попадании накладывает Иссушение.",
+  "item.lemonthings.bone_arrow": "Костяная стрела",
+  "item.lemonthings.bone_arrow.tooltip": "Накладывает Иссушение II при попадании.",
+  "item.lemonthings.withered_bone": "Иссушённая кость",
+  "item.lemonthings.withered_bone_meal": "Иссушённая костная мука",
+
+  "item.minecraft.potion.effect.wither": "Зелье иссушения",
+  "item.minecraft.splash_potion.effect.wither": "Взрывное зелье иссушения",
+  "item.minecraft.lingering_potion.effect.wither": "Туманное зелье иссушения",
+  "item.minecraft.tipped_arrow.effect.wither": "Стрела иссушения",
+  "item.minecraft.potion.effect.long_wither": "Зелье иссушения",
+  "item.minecraft.splash_potion.effect.long_wither": "Взрывное зелье иссушения",
+  "item.minecraft.lingering_potion.effect.long_wither": "Туманное зелье иссушения",
+  "item.minecraft.tipped_arrow.effect.long_wither": "Стрела иссушения",
+  "item.minecraft.potion.effect.strong_wither": "Зелье иссушения II",
+  "item.minecraft.splash_potion.effect.strong_wither": "Взрывное зелье иссушения II",
+  "item.minecraft.lingering_potion.effect.strong_wither": "Туманное зелье иссушения II",
+  "item.minecraft.tipped_arrow.effect.strong_wither": "Стрела иссушения II",
+
+  "item.lemonthings.feather_paper": "Бумажное оперение",
+  "item.lemonthings.feather_paper.tooltip": "Создаётся из бумаги на столе лучника",
+  "recipe.lemonthings.arrow_from_feather_paper": "Стрела из бумажного оперения",
+
+  "item.lemonthings.wandering_trader_bag": "Сумка странствующего торговца",
+  "item.lemonthings.wandering_trader_bag.tooltip": "Содержит различные ценные предметы",
+  "item.lemonthings.witch_bag": "Мешочек ведьмы",
+  "item.lemonthings.witch_bag.tooltip": "Содержит магические ингредиенты",
+  "item.lemonthings.piglin_bag": "Мешочек пиглина",
+  "item.lemonthings.piglin_bag.tooltip": "Содержит золото и предметы из Незера",
+  "item.lemonthings.pillager_bag": "Мешочек разбойника",
+  "item.lemonthings.pillager_bag.tooltip": "Содержит оружие и ценности",
+  "item.lemonthings.loot_bag.tooltip": "Нажмите ПКМ, чтобы открыть",
+  "message.lemonthings.bag_opened": "Вы открыли мешочек!",
+
+  "item.lemonthings.ravager_bag": "Мешочек разорителя",
+  "item.lemonthings.ravager_bag.tooltip": "Прочный мешок из кожи разорителя.\nМожет хранить до 3 стаков предметов",
+
+  "item.lemonthings.platinum_ingot": "Платиновый слиток",
+  "item.lemonthings.platinum_nugget": "Платиновый кусочек",
+  "block.lemonthings.platinum_chain": "Платиновая цепь",
+  "item.lemonthings.ravager_leather": "Кожа разорителя",
+  "block.lemonthings.platinum_block": "Платиновый блок",
+
+  "item.lemonthings.tome_of_transmission": "Том переноса",
+  "item.lemonthings.tome_of_transmission.tooltip": "Положи с зачарованным предметом в точило,\nчтобы поглотить его чары",
+
+  "item.lemonthings.flower_crown": "Цветочный венок",
+  "item.lemonthings.flower_crown.tooltip": "Пчёлы такое любят!",
+
+  "item.lemonthings.sculk_spyglass": "Скалковая подзорная труба",
+  "item.lemonthings.sculk_spyglass.tooltip": "Подсвечивает всех существ в радиусе 128 блоков при использовании",
+
+  "item.lemonthings.needle": "Игла",
+  "item.lemonthings.handmade_totem": "Самодельный тотем",
+  "item.lemonthings.handmade_totem.tooltip": "Спасает от смерти один раз, но не даёт никаких эффектов",
+  "item.lemonthings.repair_kit": "Ремонтный набор",
+  "item.lemonthings.repair_kit.tooltip": "Чинит предмет в левой руке на 0-4 прочности, тратит 1 прочность",
+  "message.lemonthings.repair_kit.success": "Предмет отремонтирован на +%d прочности!",
+  "message.lemonthings.repair_kit.failed": "Ремонт не удался!",
+
+  "item.lemonthings.wooden_bucket": "Деревянное ведро",
+  "item.lemonthings.wooden_water_bucket": "Деревянное ведро с водой",
+
+  "item.lemonthings.copper_hammer": "Медный молот"
+}

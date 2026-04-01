@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "L L",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "item": "lemonthings:ravager_leather"
+    },
+    "C": {
+      "item": "lemonthings:platinum_chain"
+    }
+  },
+  "result": {
+    "id": "lemonthings:ravager_bag",
+    "count": 1
+  }
+}

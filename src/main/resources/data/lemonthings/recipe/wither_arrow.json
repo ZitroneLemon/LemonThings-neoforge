@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:arrow"
+    },
+    {
+      "item": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": "lemonthings:wither"
+      }
+    }
+  ],
+  "result": {
+    "id": "minecraft:tipped_arrow",
+    "count": 8,
+    "components": {
+      "minecraft:potion_contents": "lemonthings:wither"
+    }
+  }
+}
