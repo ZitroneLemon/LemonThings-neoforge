@@ -1,0 +1,49 @@
+name: Publish on Modrinth
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+env:
+  MINECRAFT_VERSION: 1.21.1
+  JAVA_VERSION: 21
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: ${{ env.JAVA_VERSION }}
+      
+      - name: Make Gradle Wrapper Executable
+        if: ${{ runner.os != 'Windows' }}
+        run: chmod +x ./gradlew
+      
+      - name: Build Mod
+        run: ./gradlew clean build
+      
+      - name: Publish to Modrinth
+        uses: Kir-Antipov/mc-publish@v3.3
+        with:
+          modrinth-id: lemonthings
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+          
+          name: "LemonThings ${{ github.event.release.tag_name || '1.0.0' }}"
+          version: ${{ github.event.release.tag_name || '1.0.0' }}
+          version-type: release
+          changelog-file: CHANGELOG.md
+          
+          loaders: neoforge
+          game-versions: ${{ env.MINECRAFT_VERSION }}
+          java: ${{ env.JAVA_VERSION }}
