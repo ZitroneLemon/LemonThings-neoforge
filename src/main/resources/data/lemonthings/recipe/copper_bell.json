@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "BBB",
+    "B B"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:copper_block"
+    },
+    "D": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "lemonthings:copper_bell",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
-package com.zitrone.lemonthings;
+package com.zitrone.lemonthings.entity;
 
-import com.zitrone.lemonthings.entity.BoneArrowEntity;
+import com.zitrone.lemonthings.LemonThings;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;

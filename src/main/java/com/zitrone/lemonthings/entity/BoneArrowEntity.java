@@ -1,6 +1,5 @@
 package com.zitrone.lemonthings.entity;
 
-import com.zitrone.lemonthings.ModEntities;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;

@@ -1,27 +1,26 @@
 package com.zitrone.lemonthings;
 
-import com.zitrone.lemonthings.event.*;
-import com.zitrone.lemonthings.network.TotemActivationPayload;
-import net.neoforged.neoforge.common.NeoForgeMod;
-import net.neoforged.neoforge.common.brewing.BrewingRecipeRegistry;
-import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
-import net.minecraft.core.component.DataComponents;
+import com.zitrone.lemonthings.block.ModBlocks;
+import com.zitrone.lemonthings.block.entity.ModBlockEntities;
+import com.zitrone.lemonthings.entity.ModEntities;
+import com.zitrone.lemonthings.event.*;
+import com.zitrone.lemonthings.item.ModItems;
+import com.zitrone.lemonthings.sound.ModSounds;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.component.BundleContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.resources.ResourceLocation;
-import com.zitrone.lemonthings.item.ModItems;
-import net.neoforged.neoforge.common.NeoForge;
+import org.slf4j.Logger;
 
 @Mod(LemonThings.MODID)
 public class LemonThings {
@@ -64,17 +63,23 @@ public class LemonThings {
                         output.accept(ModItems.WOODEN_BUCKET.get());
                         output.accept(ModItems.WOODEN_WATER_BUCKET.get());
                         output.accept(ModItems.COPPER_HAMMER.get());
+                        output.accept(ModItems.MINERS_LOLLIPOP.get());
+                        output.accept(ModItems.BERRY_ROLL.get());
+                        output.accept(ModItems.COPPER_BELL.get());
+                        output.accept(ModItems.WIND_CHARGE_IN_BOTTLE.get());
                     }).build());
 
     public LemonThings(IEventBus modEventBus, ModContainer modContainer) {
         // Регистрируем конфиг
         modContainer.registerConfig(net.neoforged.fml.config.ModConfig.Type.COMMON, ModConfig.COMMON_SPEC);
 
+        ModSounds.register(modEventBus);
         ModItems.register(modEventBus);
         ModPotions.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
 
         // Регистрируем клиентские события
@@ -85,19 +90,16 @@ public class LemonThings {
         NeoForge.EVENT_BUS.register(BrewingRecipeHandler.class);
         NeoForge.EVENT_BUS.register(FeatherPaperCraftEvent.class);
         NeoForge.EVENT_BUS.register(WitheredBoneMealEvent.class);
-        NeoForge.EVENT_BUS.register(WanderingTraderTradesEvent.class);
-        NeoForge.EVENT_BUS.register(ReplaceEnchantedBooksWithCandlesEvent.class);
         NeoForge.EVENT_BUS.register(HandmadeTotemEvent.class);
         NeoForge.EVENT_BUS.register(GoatHornEffectHandler.class);
+        NeoForge.EVENT_BUS.register(DoubleJumpHandler.class);
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            // Регистрируем предикаты для луков
             registerBowProperties(ModItems.SIMPLEST_BOW.get(), 10.0F);
             registerBowProperties(ModItems.BONE_BOW.get(), 15.0F);
 
-            // Регистрируем рендерер для костяной стрелы
             net.minecraft.client.renderer.entity.EntityRenderers.register(
                     ModEntities.BONE_ARROW.get(),
                     context -> new com.zitrone.lemonthings.client.renderer.BoneArrowRenderer(context)

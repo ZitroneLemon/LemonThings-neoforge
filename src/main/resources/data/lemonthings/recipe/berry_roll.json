@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB",
+    "WW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:wheat"
+    },
+    "B": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result": {
+    "id": "lemonthings:berry_roll",
+    "count": 1
+  }
+}

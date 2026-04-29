@@ -1,15 +1,13 @@
 package com.zitrone.lemonthings.item;
 
 import com.zitrone.lemonthings.LemonThings;
-import com.zitrone.lemonthings.ModBlocks;
+import com.zitrone.lemonthings.block.ModBlocks;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.BundleContents;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import com.zitrone.lemonthings.item.TomeOfTransmissionItem;
 
 
 public class ModItems {
@@ -161,6 +159,22 @@ public class ModItems {
             () -> new CopperHammerItem(ModToolTiers.COPPER_HAMMER, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.COPPER_HAMMER, 6, -2.8F))
             )
+    );
+
+    public static final DeferredItem<Item> BERRY_ROLL = ITEMS.register("berry_roll",
+            () -> new BerryRollItem()
+    );
+
+    public static final DeferredItem<Item> MINERS_LOLLIPOP = ITEMS.register("miners_lollipop",
+            () -> new MinersLollipopItem(new Item.Properties().stacksTo(16))
+    );
+
+    public static final DeferredItem<BlockItem> COPPER_BELL = ITEMS.register("copper_bell",
+            () -> new BlockItem(ModBlocks.COPPER_BELL.get(), new Item.Properties())
+    );
+
+    public static final DeferredItem<Item> WIND_CHARGE_IN_BOTTLE = ITEMS.register("wind_charge_in_bottle",
+            () -> new Item(new Item.Properties().stacksTo(1).fireResistant())
     );
 
     public static void register(IEventBus eventBus) {

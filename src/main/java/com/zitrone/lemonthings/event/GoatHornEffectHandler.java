@@ -19,27 +19,27 @@ import java.util.Map;
 @EventBusSubscriber
 public class GoatHornEffectHandler {
 
-    private static final long COOLDOWN_TIME = 2 * 60 * 1000; // 2 минуты
+    private static final long COOLDOWN_TIME = 900; // 2 минуты
 
     private static final Map<ResourceLocation, MobEffectInstance> HORN_EFFECTS = new HashMap<>();
 
     static {
         HORN_EFFECTS.put(ResourceLocation.withDefaultNamespace("ponder_goat_horn"),
-                new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 60, 1));
+                new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 1));
         HORN_EFFECTS.put(ResourceLocation.withDefaultNamespace("sing_goat_horn"),
-                new MobEffectInstance(MobEffects.NIGHT_VISION, 20 * 60, 0));
+                new MobEffectInstance(MobEffects.NIGHT_VISION, 600, 0));
         HORN_EFFECTS.put(ResourceLocation.withDefaultNamespace("seek_goat_horn"),
-                new MobEffectInstance(MobEffects.REGENERATION, 20 * 15, 1));
+                new MobEffectInstance(MobEffects.REGENERATION, 600, 1));
         HORN_EFFECTS.put(ResourceLocation.withDefaultNamespace("feel_goat_horn"),
-                new MobEffectInstance(MobEffects.ABSORPTION, 20 * 120, 3));
+                new MobEffectInstance(MobEffects.ABSORPTION, 600, 3));
         HORN_EFFECTS.put(ResourceLocation.withDefaultNamespace("admire_goat_horn"),
-                new MobEffectInstance(MobEffects.WATER_BREATHING, 20 * 60, 0));
+                new MobEffectInstance(MobEffects.WATER_BREATHING, 600, 0));
         HORN_EFFECTS.put(ResourceLocation.withDefaultNamespace("call_goat_horn"),
-                new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20 * 60, 1));
+                new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 1));
         HORN_EFFECTS.put(ResourceLocation.withDefaultNamespace("yearn_goat_horn"),
-                new MobEffectInstance(MobEffects.JUMP, 20 * 60, 1));
+                new MobEffectInstance(MobEffects.JUMP, 600, 1));
         HORN_EFFECTS.put(ResourceLocation.withDefaultNamespace("dream_goat_horn"),
-                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20 * 60, 1));
+                new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1));
     }
 
     @SubscribeEvent
@@ -83,6 +83,6 @@ public class GoatHornEffectHandler {
         player.playSound(instrumentHolder.value().soundEvent().value(), 1.0F, 1.0F);
 
         // Устанавливаем ванильную перезарядку, чтобы отображалась серая полоска
-        player.getCooldowns().addCooldown(stack.getItem(), (int)(COOLDOWN_TIME / 50));
+        player.getCooldowns().addCooldown(stack.getItem(), (int)(COOLDOWN_TIME));
     }
 }

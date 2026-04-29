@@ -1,0 +1,11 @@
+{
+  "copper_bell_use": {
+    "subtitle": "subtitles.lemonthings.copper_bell_use",
+    "sounds": [
+      {
+        "name": "lemonthings:copper_bell_use",
+        "stream": false
+      }
+    ]
+  }
+}

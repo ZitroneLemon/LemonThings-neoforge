@@ -68,5 +68,15 @@
   "item.lemonthings.wooden_bucket": "Деревянное ведро",
   "item.lemonthings.wooden_water_bucket": "Деревянное ведро с водой",
 
-  "item.lemonthings.copper_hammer": "Медный молот"
+  "item.lemonthings.copper_hammer": "Медный молот",
+
+  "item.lemonthings.berry_roll": "Ягодный рулет",
+  "item.lemonthings.miners_lollipop": "Шахтёрский леденец",
+
+  "subtitles.lemonthings.copper_bell_use": "Колокольня",
+  "block.lemonthings.copper_bell": "Медный колокол",
+
+  "item.lemonthings.wind_charge_in_bottle": "Вихревой заряд в бутылке",
+  "curios.identifier.belt": "Пояс",
+  "curios.modifiers.belt": "Когда на поясе:"
 }

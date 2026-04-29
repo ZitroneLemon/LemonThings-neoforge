@@ -1,8 +1,8 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "NS",
-    "IQ"
+    "QN",
+    "RI"
   ],
   "key": {
     "N": {
@@ -11,8 +11,8 @@
     "I": {
       "item": "minecraft:copper_ingot"
     },
-    "S": {
-      "item": "minecraft:string"
+    "R": {
+      "item": "minecraft:redstone"
     },
     "Q": {
       "item": "minecraft:quartz"

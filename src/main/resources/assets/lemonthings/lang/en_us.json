@@ -52,7 +52,7 @@
   "item.lemonthings.tome_of_transmission.tooltip": "Place with an enchanted item in a grindstone to absorb its enchantments",
 
   "item.lemonthings.flower_crown": "Flower Crown",
-  "item.lemonthings.flower_crown.tooltip": "Bees love this.!",
+  "item.lemonthings.flower_crown.tooltip": "Bees love this!",
 
   "item.lemonthings.sculk_spyglass": "Sculk Spyglass",
   "item.lemonthings.sculk_spyglass.tooltip": "Highlights all entities within 128 blocks when used",
@@ -68,5 +68,15 @@
   "item.lemonthings.wooden_bucket": "Wooden Bucket",
   "item.lemonthings.wooden_water_bucket": "Wooden Water Bucket",
 
-  "item.lemonthings.copper_hammer": "Copper Hammer"
+  "item.lemonthings.copper_hammer": "Copper Hammer",
+
+  "item.lemonthings.berry_roll": "Berry Roll",
+  "item.lemonthings.miners_lollipop": "Miner's Lollipop",
+
+  "subtitles.lemonthings.copper_bell_use": "Copper Bell rings",
+  "block.lemonthings.copper_bell": "Copper Bell",
+
+  "item.lemonthings.wind_charge_in_bottle": "Wind Charge in a Bottle",
+  "curios.identifier.belt": "Belt",
+  "curios.modifiers.belt": "When worn on belt:"
 }
