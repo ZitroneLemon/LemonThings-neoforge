@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P",
+    "S"
+  ],
+  "key": {
+    "P": {"item": "lemonthings:platinum_ingot"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {
+    "id": "lemonthings:platinum_sword",
+    "count": 1
+  }
+}

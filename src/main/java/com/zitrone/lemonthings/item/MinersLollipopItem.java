@@ -13,7 +13,7 @@ public class MinersLollipopItem extends Item {
                         .nutrition(2)
                         .saturationModifier(0.2F)
                         .alwaysEdible()
-                        .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 60 * 20, 1), 1.0F)
+                        .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 90 * 20, 1), 1.0F)
                         .build()
                 )
         );

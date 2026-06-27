@@ -2,10 +2,15 @@ package com.zitrone.lemonthings.item;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 import software.bernie.geckolib.animatable.GeoItem;
+import top.theillusivec4.curios.api.CuriosApi;
 import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.AnimatableManager;
@@ -38,6 +43,34 @@ public class FlowerCrownItem extends Item implements GeoItem {
     public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
         // Намеренно пусто — не используем GeckoLib рендерер для иконки
         // 2D иконка берётся из models/item/flower_crown.json как обычно
+    }
+
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
+        ItemStack stack = player.getItemInHand(hand);
+        if (!level.isClientSide()) {
+            boolean equipped = CuriosApi.getCuriosInventory(player).map(inv -> {
+                var slots = inv.getCurios();
+                var headSlots = slots.get("head");
+                if (headSlots == null) return false;
+                var stacks = headSlots.getStacks();
+                for (int i = 0; i < stacks.getSlots(); i++) {
+                    if (stacks.getStackInSlot(i).isEmpty()) {
+                        stacks.setStackInSlot(i, stack.copyWithCount(1));
+                        if (!player.getAbilities().instabuild) {
+                            stack.shrink(1);
+                        }
+                        return true;
+                    }
+                }
+                return false;
+            }).orElse(false);
+
+            if (equipped) {
+                return InteractionResultHolder.success(stack);
+            }
+        }
+        return InteractionResultHolder.pass(stack);
     }
 
     @Override

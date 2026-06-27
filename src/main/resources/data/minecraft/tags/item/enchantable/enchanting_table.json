@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "lemonthings:platinum_helmet",
+    "lemonthings:platinum_chestplate",
+    "lemonthings:platinum_leggings",
+    "lemonthings:platinum_boots",
+    "lemonthings:strider_boots",
+    "lemonthings:platinum_sword",
+    "lemonthings:amethyst_sword",
+    "lemonthings:platinum_axe",
+    "lemonthings:platinum_pickaxe",
+    "lemonthings:copper_hammer",
+    "lemonthings:platinum_shovel",
+    "lemonthings:platinum_hoe",
+    "lemonthings:simplest_bow",
+    "lemonthings:bone_bow",
+    "lemonthings:stalactite_shield",
+    "lemonthings:hunters_knife"
+  ]
+}

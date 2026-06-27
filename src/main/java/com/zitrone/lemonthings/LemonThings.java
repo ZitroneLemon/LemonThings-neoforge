@@ -1,12 +1,23 @@
 package com.zitrone.lemonthings;
 
+import org.slf4j.Logger;
+
 import com.mojang.logging.LogUtils;
 import com.zitrone.lemonthings.block.ModBlocks;
 import com.zitrone.lemonthings.block.entity.ModBlockEntities;
 import com.zitrone.lemonthings.entity.ModEntities;
-import com.zitrone.lemonthings.event.*;
+import com.zitrone.lemonthings.event.AmethystEnchantEvent;
+import com.zitrone.lemonthings.event.BrewingRecipeHandler;
+import com.zitrone.lemonthings.event.DoubleJumpHandler;
+import com.zitrone.lemonthings.event.FeatherPaperCraftEvent;
+import com.zitrone.lemonthings.event.GoatHornEffectHandler;
+import com.zitrone.lemonthings.event.HandmadeTotemEvent;
+import com.zitrone.lemonthings.event.LavaWalkerHandler;
+import com.zitrone.lemonthings.event.StriderGrowUpHandler;
+import com.zitrone.lemonthings.event.WitheredBoneMealEvent;
 import com.zitrone.lemonthings.item.ModItems;
 import com.zitrone.lemonthings.sound.ModSounds;
+
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -20,7 +31,6 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import org.slf4j.Logger;
 
 @Mod(LemonThings.MODID)
 public class LemonThings {
@@ -54,6 +64,15 @@ public class LemonThings {
                         output.accept(ModItems.RAVAGER_LEATHER.get());
                         output.accept(ModItems.PLATINUM_CHAIN_ITEM.get());
                         output.accept(ModItems.PLATINUM_BLOCK_ITEM.get());
+                        output.accept(ModItems.PLATINUM_SWORD.get());
+                        output.accept(ModItems.PLATINUM_PICKAXE.get());
+                        output.accept(ModItems.PLATINUM_AXE.get());
+                        output.accept(ModItems.PLATINUM_SHOVEL.get());
+                        output.accept(ModItems.PLATINUM_HOE.get());
+                        output.accept(ModItems.PLATINUM_HELMET.get());
+                        output.accept(ModItems.PLATINUM_CHESTPLATE.get());
+                        output.accept(ModItems.PLATINUM_LEGGINGS.get());
+                        output.accept(ModItems.PLATINUM_BOOTS.get());
                         output.accept(ModItems.TOME_OF_TRANSMISSION.get());
                         output.accept(ModItems.FLOWER_CROWN.get());
                         output.accept(ModItems.SCULK_SPYGLASS.get());
@@ -67,6 +86,12 @@ public class LemonThings {
                         output.accept(ModItems.BERRY_ROLL.get());
                         output.accept(ModItems.COPPER_BELL.get());
                         output.accept(ModItems.WIND_CHARGE_IN_BOTTLE.get());
+                        output.accept(ModItems.STALACTITE_SHIELD.get());
+                        output.accept(ModItems.STRIDER_SCALE.get());
+                        output.accept(ModItems.STRIDER_BOOTS.get());
+                        output.accept(ModItems.WOLF_TOOTH.get());
+                        output.accept(ModItems.HUNTERS_KNIFE.get());
+                        output.accept(ModItems.WOLF_TEETH_NECKLACE.get());
                     }).build());
 
     public LemonThings(IEventBus modEventBus, ModContainer modContainer) {
@@ -93,6 +118,8 @@ public class LemonThings {
         NeoForge.EVENT_BUS.register(HandmadeTotemEvent.class);
         NeoForge.EVENT_BUS.register(GoatHornEffectHandler.class);
         NeoForge.EVENT_BUS.register(DoubleJumpHandler.class);
+        NeoForge.EVENT_BUS.register(LavaWalkerHandler.class);
+        NeoForge.EVENT_BUS.register(StriderGrowUpHandler.class);
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {

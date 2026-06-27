@@ -1,7 +1,6 @@
 {
 	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
-	"parent": "hammer_from_farlands",
 	"textures": {
 		"1": "lemonthings:item/copper_hammer",
 		"particle": "lemonthings:item/copper_hammer"

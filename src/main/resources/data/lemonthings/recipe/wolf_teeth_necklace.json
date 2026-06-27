@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "L L",
+    "TTT"
+  ],
+  "key": {
+    "T": {"item": "lemonthings:wolf_tooth"},
+    "L": {"item": "minecraft:leather"},
+    "S": {"item": "minecraft:string"}
+  },
+  "result": {
+    "id": "lemonthings:wolf_teeth_necklace",
+    "count": 1
+  }
+}

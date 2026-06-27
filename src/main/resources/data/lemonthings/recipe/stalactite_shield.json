@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BIB",
+    "SBS",
+    " B "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "B": {
+      "item": "minecraft:dripstone_block"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "lemonthings:stalactite_shield",
+    "count": 1
+  }
+}

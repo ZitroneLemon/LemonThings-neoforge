@@ -77,6 +77,34 @@
   "block.lemonthings.copper_bell": "Медный колокол",
 
   "item.lemonthings.wind_charge_in_bottle": "Вихревой заряд в бутылке",
+  "item.lemonthings.wind_charge_in_bottle.tooltip": "Позволяет совершить двойной прыжок",
   "curios.identifier.belt": "Пояс",
-  "curios.modifiers.belt": "Когда на поясе:"
+  "curios.modifiers.belt": "Когда на поясе:",
+
+  "item.lemonthings.stalactite_shield": "Сталактитовый щит",
+  "item.lemonthings.stalactite_shield.tooltip1": "Отражает 50% заблокированного урона ближнего боя обратно атакующему",
+
+  "item.lemonthings.strider_scale": "Чешуйка страйдера",
+  "item.lemonthings.strider_scale.tooltip": "Выпадают при взрослении детёныша страйдера",
+  "item.lemonthings.strider_boots": "Ботинки страйдера",
+  "item.lemonthings.strider_boots.tooltip": "Позволяет ходить по лаве.\nПри полном погружении защита не действует.",
+
+  "item.lemonthings.platinum_sword": "Платиновый меч",
+  "item.lemonthings.platinum_pickaxe": "Платиновая кирка",
+  "item.lemonthings.platinum_axe": "Платиновый топор",
+  "item.lemonthings.platinum_shovel": "Платиновая лопата",
+  "item.lemonthings.platinum_hoe": "Платиновая мотыга",
+  "item.lemonthings.platinum_helmet": "Платиновый шлем",
+  "item.lemonthings.platinum_chestplate": "Платиновый нагрудник",
+  "item.lemonthings.platinum_leggings": "Платиновые поножи",
+  "item.lemonthings.platinum_boots": "Платиновые ботинки",
+
+  "item.lemonthings.wolf_tooth": "Зуб волка",
+  "item.lemonthings.wolf_tooth.tooltip": "Выпадает при убийстве скелетов волками",
+  "item.lemonthings.hunters_knife": "Нож охотника",
+  "item.lemonthings.hunters_knife.tooltip": "Двойное количество мяса с животных",
+  "item.lemonthings.wolf_teeth_necklace": "Ожерелье из волчьих зубов",
+  "item.lemonthings.wolf_teeth_necklace.tooltip": "Усиливает приручённых волков в радиусе 32 блоков",
+  "curios.identifier.neck": "Шея",
+  "curios.modifiers.neck": "Когда на шее:"
 }

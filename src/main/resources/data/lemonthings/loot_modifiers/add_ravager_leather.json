@@ -2,6 +2,10 @@
   "type": "lemonthings:add_item",
   "conditions": [
     {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:entities/ravager"
+    },
+    {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
@@ -12,5 +16,5 @@
   "item": "lemonthings:ravager_leather",
   "min_count": 1,
   "max_count": 2,
-  "chance": 0.5
+  "chance": 1.0
 }

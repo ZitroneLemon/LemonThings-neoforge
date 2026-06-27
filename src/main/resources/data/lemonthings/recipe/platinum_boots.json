@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    "P P"
+  ],
+  "key": {
+    "P": {"item": "lemonthings:platinum_ingot"}
+  },
+  "result": {
+    "id": "lemonthings:platinum_boots",
+    "count": 1
+  }
+}

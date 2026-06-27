@@ -39,6 +39,11 @@ public class ClientModEvents {
                         return 0.0F;
                     });
 
+            ItemProperties.register(ModItems.STALACTITE_SHIELD.get(),
+                    ResourceLocation.withDefaultNamespace("blocking"),
+                    (stack, level, entity, seed) ->
+                            entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F);
+
             CuriosRendererRegistry.register(ModItems.FLOWER_CROWN.get(), FlowerCrownCurioRenderer::new);
 
             BlockEntityRenderers.register(ModBlockEntities.COPPER_BELL.get(), CopperBellRenderer::new);
@@ -46,6 +51,5 @@ public class ClientModEvents {
             LemonThings.LOGGER.info("Client setup completed!");
         });
     }
-
 
 }

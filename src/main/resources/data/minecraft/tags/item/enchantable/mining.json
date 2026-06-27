@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "lemonthings:platinum_pickaxe",
+    "lemonthings:copper_hammer",
+    "lemonthings:platinum_shovel",
+    "lemonthings:platinum_axe",
+    "lemonthings:platinum_hoe"
+  ]
+}

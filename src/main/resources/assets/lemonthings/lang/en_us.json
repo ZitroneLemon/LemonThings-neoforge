@@ -77,6 +77,34 @@
   "block.lemonthings.copper_bell": "Copper Bell",
 
   "item.lemonthings.wind_charge_in_bottle": "Wind Charge in a Bottle",
+  "item.lemonthings.wind_charge_in_bottle.tooltip": "Allows you to double jump",
   "curios.identifier.belt": "Belt",
-  "curios.modifiers.belt": "When worn on belt:"
+  "curios.modifiers.belt": "When worn on belt:",
+
+  "item.lemonthings.stalactite_shield": "Stalactite Shield",
+  "item.lemonthings.stalactite_shield.tooltip1": "Reflects 50% of blocked melee damage back to the attacker",
+
+  "item.lemonthings.strider_scale": "Strider Scale",
+  "item.lemonthings.strider_scale.tooltip": "Drops when a baby strider grows up",
+  "item.lemonthings.strider_boots": "Strider Boots",
+  "item.lemonthings.strider_boots.tooltip": "Allows walking on lava.\nProvides no protection when fully submerged.",
+
+  "item.lemonthings.platinum_sword": "Platinum Sword",
+  "item.lemonthings.platinum_pickaxe": "Platinum Pickaxe",
+  "item.lemonthings.platinum_axe": "Platinum Axe",
+  "item.lemonthings.platinum_shovel": "Platinum Shovel",
+  "item.lemonthings.platinum_hoe": "Platinum Hoe",
+  "item.lemonthings.platinum_helmet": "Platinum Helmet",
+  "item.lemonthings.platinum_chestplate": "Platinum Chestplate",
+  "item.lemonthings.platinum_leggings": "Platinum Leggings",
+  "item.lemonthings.platinum_boots": "Platinum Boots",
+
+  "item.lemonthings.wolf_tooth": "Wolf Tooth",
+  "item.lemonthings.wolf_tooth.tooltip": "Drops when wolves kill skeletons",
+  "item.lemonthings.hunters_knife": "Hunter's Knife",
+  "item.lemonthings.hunters_knife.tooltip": "Double meat from animals",
+  "item.lemonthings.wolf_teeth_necklace": "Wolf Teeth Necklace",
+  "item.lemonthings.wolf_teeth_necklace.tooltip": "Boosts tamed wolves within 32 blocks",
+  "curios.identifier.neck": "Neck",
+  "curios.modifiers.neck": "When worn on neck:"
 }

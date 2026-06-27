@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "lemonthings:platinum_helmet",
+    "lemonthings:platinum_chestplate",
+    "lemonthings:platinum_leggings",
+    "lemonthings:platinum_boots",
+    "lemonthings:strider_boots"
+  ]
+}

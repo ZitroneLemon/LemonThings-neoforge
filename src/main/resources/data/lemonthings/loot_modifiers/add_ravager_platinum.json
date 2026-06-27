@@ -2,15 +2,19 @@
   "type": "lemonthings:add_item",
   "conditions": [
     {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:entities/ravager"
+    },
+    {
       "condition": "minecraft:entity_properties",
+      "entity": "this",
       "predicate": {
         "type": "minecraft:ravager"
-      },
-      "entity": "this"
+      }
     }
   ],
   "item": "lemonthings:platinum_ingot",
   "min_count": 1,
-  "max_count": 2,
-  "chance": 0.4
+  "max_count": 5,
+  "chance": 1.0
 }

@@ -1,10 +1,26 @@
 package com.zitrone.lemonthings.item;
 
+import java.util.List;
+import java.util.Map;
+
 import com.zitrone.lemonthings.LemonThings;
 import com.zitrone.lemonthings.block.ModBlocks;
+
+import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponents;
-import net.minecraft.world.item.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.HoeItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.component.BundleContents;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -63,7 +79,7 @@ public class ModItems {
             ITEMS.register("witch_bag",
                     () -> new LootBagItem(new Item.Properties().stacksTo(16)));
 
-    // Мешочек пиглина
+    // Мешочек пиглинa
     public static final DeferredItem<LootBagItem> PIGLIN_BAG =
             ITEMS.register("piglin_bag",
                     () -> new LootBagItem(new Item.Properties().stacksTo(16)));
@@ -174,8 +190,156 @@ public class ModItems {
     );
 
     public static final DeferredItem<Item> WIND_CHARGE_IN_BOTTLE = ITEMS.register("wind_charge_in_bottle",
-            () -> new Item(new Item.Properties().stacksTo(1).fireResistant())
+            () -> new WindChargeInBottleItem(new Item.Properties().stacksTo(1).fireResistant())
     );
+
+    // Сталактитовый щит
+    public static final DeferredItem<StalactiteShieldItem> STALACTITE_SHIELD = ITEMS.register("stalactite_shield",
+            () -> new StalactiteShieldItem(new Item.Properties()
+                    .stacksTo(1)
+                    .durability(StalactiteShieldItem.DURABILITY)
+            )
+    );
+
+    // Чешуйка страйдера
+    public static final DeferredItem<StriderScaleItem> STRIDER_SCALE = ITEMS.register("strider_scale",
+            () -> new StriderScaleItem(new Item.Properties().stacksTo(64))
+    );
+
+    // Материал брони страйдера
+    private static Holder<ArmorMaterial> striderMaterial() {
+        return Holder.direct(new ArmorMaterial(
+                Map.of(
+                        ArmorItem.Type.HELMET, 0,
+                        ArmorItem.Type.CHESTPLATE, 0,
+                        ArmorItem.Type.LEGGINGS, 0,
+                        ArmorItem.Type.BOOTS, 2
+                ),
+                9,
+                SoundEvents.ARMOR_EQUIP_IRON,
+                () -> Ingredient.of(STRIDER_SCALE.get()),
+                List.of(new ArmorMaterial.Layer(
+                        ResourceLocation.fromNamespaceAndPath(LemonThings.MODID, "strider")
+                )),
+                0.0f,
+                0.0f
+        ));
+    }
+
+    // Ботинки страйдера
+    public static final DeferredItem<StriderBootsItem> STRIDER_BOOTS = ITEMS.register("strider_boots",
+            () -> new StriderBootsItem(striderMaterial(), new Item.Properties()
+                    .stacksTo(1)
+                    .durability(195)
+                    .fireResistant()
+            )
+    );
+
+    // ====================== ПЛАТИНОВЫЕ ПРЕДМЕТЫ ======================
+
+    // Платиновый меч
+    public static final DeferredItem<SwordItem> PLATINUM_SWORD = ITEMS.register("platinum_sword",
+            () -> new SwordItem(ModToolTiers.PLATINUM_TOOL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.PLATINUM_TOOL, 3, -2.4F))
+            )
+    );
+
+    // Платиновая кирка
+    public static final DeferredItem<PickaxeItem> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.PLATINUM_TOOL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM_TOOL, 1, -2.8F))
+            )
+    );
+
+    // Платиновый топор
+    public static final DeferredItem<AxeItem> PLATINUM_AXE = ITEMS.register("platinum_axe",
+            () -> new AxeItem(ModToolTiers.PLATINUM_TOOL, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.PLATINUM_TOOL, 5, -3.0F))
+            )
+    );
+
+    // Платиновая лопата
+    public static final DeferredItem<ShovelItem> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel",
+            () -> new ShovelItem(ModToolTiers.PLATINUM_TOOL, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.PLATINUM_TOOL, 1.5F, -3.0F))
+            )
+    );
+
+    // Платиновая мотыга
+    public static final DeferredItem<HoeItem> PLATINUM_HOE = ITEMS.register("platinum_hoe",
+            () -> new HoeItem(ModToolTiers.PLATINUM_TOOL, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.PLATINUM_TOOL, -1.0F, 0.0F))
+            )
+    );
+
+    // Материал платиновой брони.
+    // Защита (по слотам): шлем=2, нагрудник=7, поножи=5, ботинки=2
+    // Твёрдость = 1.0 (как у алмазной брони)
+    private static Holder<ArmorMaterial> platinumMaterial() {
+        return Holder.direct(new ArmorMaterial(
+                Map.of(
+                        ArmorItem.Type.HELMET, 2,
+                        ArmorItem.Type.CHESTPLATE, 7,
+                        ArmorItem.Type.LEGGINGS, 5,
+                        ArmorItem.Type.BOOTS, 2
+                ),
+                18,                                    // enchantability
+                SoundEvents.ARMOR_EQUIP_IRON,
+                () -> Ingredient.of(PLATINUM_INGOT.get()),
+                List.of(new ArmorMaterial.Layer(
+                        ResourceLocation.fromNamespaceAndPath(LemonThings.MODID, "platinumarmor")
+                )),
+                1.0f,                                  // toughness
+                0.0f                                   // knockback resistance
+        ));
+    }
+
+    // Платиновый шлем (прочность 264)
+    public static final DeferredItem<ArmorItem> PLATINUM_HELMET = ITEMS.register("platinum_helmet",
+            () -> new ArmorItem(platinumMaterial(), ArmorItem.Type.HELMET, new Item.Properties()
+                    .durability(264)
+            )
+    );
+
+    // Платиновый нагрудник (прочность 384)
+    public static final DeferredItem<ArmorItem> PLATINUM_CHESTPLATE = ITEMS.register("platinum_chestplate",
+            () -> new ArmorItem(platinumMaterial(), ArmorItem.Type.CHESTPLATE, new Item.Properties()
+                    .durability(384)
+            )
+    );
+
+    // Платиновые поножи (прочность 360)
+    public static final DeferredItem<ArmorItem> PLATINUM_LEGGINGS = ITEMS.register("platinum_leggings",
+            () -> new ArmorItem(platinumMaterial(), ArmorItem.Type.LEGGINGS, new Item.Properties()
+                    .durability(360)
+            )
+    );
+
+    // Платиновые ботинки (прочность 312)
+    public static final DeferredItem<ArmorItem> PLATINUM_BOOTS = ITEMS.register("platinum_boots",
+            () -> new ArmorItem(platinumMaterial(), ArmorItem.Type.BOOTS, new Item.Properties()
+                    .durability(312)
+            )
+    );
+
+    // ====================== ВОЛЧЬИ ЗУБЫ И ОХОТНИЧЬЕ СНАРЯЖЕНИЕ ======================
+
+    // Зуб волка — выпадает со скелета-волка (Alex's Mobs: Skelewag)
+    public static final DeferredItem<Item> WOLF_TOOTH =
+            ITEMS.register("wolf_tooth",
+                    () -> new WolfToothItem(new Item.Properties()));
+
+    // Нож охотника — режет скот, добывая двойное мясо
+    public static final DeferredItem<Item> HUNTERS_KNIFE =
+            ITEMS.register("hunters_knife",
+                    () -> new HuntersKnifeItem(ModToolTiers.HUNTER_KNIFE, new Item.Properties()
+                            .attributes(SwordItem.createAttributes(ModToolTiers.HUNTER_KNIFE, 4, -2.0F))
+                    ));
+
+    // Ожерелье из волчьих зубов — Curios-слот "neck", усиливает прирученных волков
+    public static final DeferredItem<Item> WOLF_TEETH_NECKLACE =
+            ITEMS.register("wolf_teeth_necklace",
+                    () -> new WolfTeethNecklaceItem(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
